@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'sky',
     environment,
-    rootURL: '/',
+    rootURL: '/skyori-study',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
