@@ -1,0 +1,72 @@
+{
+    "speakers": [
+        {
+          "firstName": "Ivan",
+          "lastName": "Ivanov"
+        },
+        {
+          "firstName": "Petr",
+          "lastName": "Petrov"
+        },
+        {
+          "firstName": "Sergey",
+          "lastName": "Sergeev"
+        },
+        {
+          "firstName": "Anton",
+          "lastName": "Antonov"
+        },
+        {
+          "firstName": "Dmitry",
+          "lastName": "Dmitriev"
+        },
+        {
+          "firstName": "Donald",
+          "lastName": "Trump"
+        }
+    ],
+    "books": [
+        {
+          "name": "Clean Code",
+          "author": {
+            "firstName": "Robert C.",
+            "lastName": "Martin"
+          }
+        },
+        {
+          "name": "Code Complete",
+          "author": {
+            "firstName": "Steve",
+            "lastName": "McConnell"
+          }
+        },
+        {
+          "name": "Clean Architecture",
+          "author": {
+            "firstName": "Robert C.",
+            "lastName": "Martin"
+          }
+        },
+        {
+          "name": "Eloquent JavaScript",
+          "author": {
+            "firstName": "Marijn",
+            "lastName": "Haverbeke"
+          }
+        },
+        {
+          "name": "Hyperfocus",
+          "author": {
+            "firstName": "Chris",
+            "lastName": "Bailey"
+          }
+        },
+        {
+          "name": "Grokking Algorithms",
+          "author": {
+            "firstName": "Aditya Y.",
+            "lastName": "Bhargava"
+          }
+        }
+    ]
+  }
