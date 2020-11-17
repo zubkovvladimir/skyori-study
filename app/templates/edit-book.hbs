@@ -1,6 +1,6 @@
 <div class="container h-100">
     <div class="htop">
-        <h2 class="text-center">Редактирование книги: Название</h2>
+        <h2 class="text-center">Редактирование книги: {{this.model.name}}</h2>
         <form class="edit-form">
             <div class="form-group row">
                 <label for="inputTitle" class="col-sm-2 col-form-label">Название:</label>
@@ -53,7 +53,7 @@
                     <button type="submit" class="btn btn-outline-primary btn-lg">Сохранить</button>
                 </div>
                 <div class="col-6 text-right">
-                    <button type="submit" class="btn btn-outline-secondary btn-lg">Отмена</button>
+                    <LinkTo @route="book" class="btn btn-outline-secondary btn-lg">Отмена</LinkTo>
                 </div>
             </div>
         </form>

@@ -23,6 +23,7 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+
   app.import('vendor/tagsinput.css');
 
   const jsFiles = funnel('vendor', {
@@ -30,5 +31,5 @@ module.exports = function(defaults) {
     destDir: 'js'
   });
 
-  return app.toTree();
+  return app.toTree(jsFiles);
 };
