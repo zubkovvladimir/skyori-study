@@ -1,6 +1,9 @@
 <div class="container h-100">
     <div class="htop">
-        <h2 class="text-center">Книги</h2>
+        <div class="d-flex position-relative justify-content-center">
+            <LinkTo @route="create-book" class="btn btn-outline-success my-2 d-flex position-absolute add-btn" @model="{{this.model.id}}">Добавить</LinkTo>
+            <h2 class="text-center">Книги</h2>
+        </div>
         <div class="form-row navbar-panel justify-content-between">
             <div class="col-md-auto align-self-start">
                 <form class="form-inline">
