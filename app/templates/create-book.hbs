@@ -1,29 +1,29 @@
 <div class="container h-100">
     <div class="htop">
         <h2 class="text-center">Добавить книгу</h2>
-        <form class="edit-form">
+        <form class="edit-form" {{on "submit" this.saveBook}}>
             <div class="form-group row">
                 <label for="inputTitle" class="col-sm-2 col-form-label">Название:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-lg" id="inputTitle" placeholder="Полное название книги">
+                    <input type="text" class="form-control form-control-lg" id="inputTitle" placeholder="Полное название книги" value="{{this.model.name}}" oninput={{action "changeName" value="target.value"}}>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputAuthor" class="col-sm-2 col-form-label">Автор:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-lg" id="inputAuthor" placeholder="Фамилия И.О. автора">
+                    <input type="text" class="form-control form-control-lg" id="inputAuthor" placeholder="Фамилия И.О. автора" value="{{this.model.author}}" oninput={{action "changeAuthor" value="target.value"}}>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputPagesCount" class="col-sm-2 col-form-label">Объем:</label>
                 <div class="col-sm-10">
-                    <input type="number" class="form-control form-control-lg" id="inputPagesCount" placeholder="Количество страниц книги">
+                    <input type="number" class="form-control form-control-lg" id="inputPagesCount" placeholder="Количество страниц книги" value="{{this.model.features.number}}" oninput={{action "changeNumber" value="target.value"}}>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputDescriptionURL" class="col-sm-2 col-form-label">Описание:</label>
                 <div class="col-sm-10">
-                    <input type="url" class="form-control form-control-lg" id="inputDescriptionURL" placeholder="Ссылка на сайт с описанием книги">
+                    <input type="url" class="form-control form-control-lg" id="inputDescriptionURL" placeholder="Ссылка на сайт с описанием книги" value="{{this.model.features.description}}" oninput={{action "changeDescription" value="target.value"}}>
                 </div>
             </div>
             <div class="form-group row">

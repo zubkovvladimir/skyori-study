@@ -41,4 +41,14 @@ export default class DataServiceService extends Service {
         body: JSON.stringify(book)
       });
     }
+
+    createBook(book) {
+      return fetch(`${config.APP.backEndURL}/books`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(book)
+      });
+    }
 }
