@@ -28,7 +28,7 @@
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <div><strong>Автор</strong>: {{book.author.firstName}} {{book.author.lastName}}</div>
+                            <div><strong>Автор</strong>: {{book.author}}</div>
                             <div><strong>Количество страниц</strong>: {{book.features.number}}</div>
                             <div><strong>Теги</strong>: <a href="#" class="tag-link"><span class="small">#суперкгнига</span></a>, <a href="#" class="tag-link"><span class="small">#программирование</span></a></div>
                         </li>
@@ -48,7 +48,7 @@
                     <div class="card-footer">
                         <div class="row">
                             <div class="col">
-                                <a href="#" class="card-link line-offset">Описание</a>
+                                <a href="{{book.features.description}}" class="card-link line-offset">Описание</a>
                             </div>
                             <div class="col text-right">
                                 <LinkTo @route="edit-book" class="btn btn-outline-primary" @model="{{book.id}}">

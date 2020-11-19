@@ -31,4 +31,14 @@ export default class DataServiceService extends Service {
         body: JSON.stringify(speaker)
       });
     }
+
+    changeBook(book) {
+      return fetch(`${config.APP.backEndURL}/books/${book.id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(book)
+      });
+    }
 }
