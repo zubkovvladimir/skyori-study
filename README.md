@@ -1,57 +1,18 @@
-# sky
+# Курс - Ember, компания Skyori
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Учебный проект «Книжный клуб» 
+* Студент: [Владимир Зубков].
+* Наставник: [Андрей Соколов].
 
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd sky`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+### Программа обучения
+1. Архитектура веб-приложений
+2. Знакомство с фреймворком Ember.js
+3. Создание и настройка проекта Ember-приложения
+4. Ключевые концепции Ember-приложений
+5. Использование библиотеки Ember Data для доступа к данным
+6. Ключевые технические вопросы и создание мобильных приложений
+7. Выпуск релизов и развертывание Ember-приложений
+8. Инструменты для тестирования Ember-приложений
+9. Разработка тестов для Ember-приложений
+10. Использование расширения Ember Inspector и Chrome Developer Tools
+11. Логирование ошибок в Ember-приложениях
