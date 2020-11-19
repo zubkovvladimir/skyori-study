@@ -21,4 +21,14 @@ export default class DataServiceService extends Service {
         let response = await fetch(`${config.APP.backEndURL}/speakers/${id}`);
         return response.json();
     }
+
+    changeSpeaker(speaker) {
+      return fetch(`${config.APP.backEndURL}/speakers/${speaker.id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(speaker)
+      });
+    }
 }
