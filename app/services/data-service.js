@@ -67,4 +67,10 @@ export default class DataServiceService extends Service {
         method: 'DELETE'
       });
     }
+
+    deleteBook(id) {
+      return fetch(`${config.APP.backEndURL}/books/${id}`, {
+        method: 'DELETE'
+      });
+    }
 }
