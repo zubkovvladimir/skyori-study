@@ -51,4 +51,14 @@ export default class DataServiceService extends Service {
         body: JSON.stringify(book)
       });
     }
+
+    createSpeaker(speaker) {
+      return fetch(`${config.APP.backEndURL}/speakers`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(speaker)
+      });
+    }
 }
