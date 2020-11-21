@@ -61,4 +61,10 @@ export default class DataServiceService extends Service {
         body: JSON.stringify(speaker)
       });
     }
+
+    deleteSpeaker(id) {
+      return fetch(`${config.APP.backEndURL}/speakers/${id}`, {
+        method: 'DELETE'
+      });
+    }
 }
