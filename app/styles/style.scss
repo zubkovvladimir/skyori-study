@@ -113,6 +113,18 @@ a.tag-link:hover {
   left: 0;
 }
 
+.not-found {
+  position: absolute;
+  top: 15vh;
+  left: 20vw;
+}
+
+.loading {
+  position: absolute;
+  top: 30vh;
+  left: 35vw;
+}
+
 /* Media queries
 -------------------------------------------------- */
 
