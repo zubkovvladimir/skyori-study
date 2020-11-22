@@ -2,24 +2,26 @@ import Service from '@ember/service';
 import config from 'sky/config/environment';
 
 export default class DataServiceService extends Service {
-    async getBooks() {
-        let response = await fetch(`${config.APP.backEndURL}/books`);
-        return response.json();
+    async getBooks(searchValue) {
+      let searchSegm = searchValue ? `?q=${searchValue}` : '';
+      let response = await fetch(`${config.APP.backEndURL}/books${searchSegm}`);
+      return response.json();
     }
 
-    async getSpeakers() {
-        let response = await fetch(`${config.APP.backEndURL}/speakers`);
-        return response.json();
+    async getSpeakers(searchValue) {
+      let searchSegm = searchValue ? `?q=${searchValue}` : '';
+      let response = await fetch(`${config.APP.backEndURL}/speakers${searchSegm}`);
+      return response.json();
     }
 
     async getBook(id) {
-        let response = await fetch(`${config.APP.backEndURL}/books/${id}`);
-        return response.json();
+      let response = await fetch(`${config.APP.backEndURL}/books/${id}`);
+      return response.json();
     }
 
     async getSpeaker(id) {
-        let response = await fetch(`${config.APP.backEndURL}/speakers/${id}`);
-        return response.json();
+      let response = await fetch(`${config.APP.backEndURL}/speakers/${id}`);
+      return response.json();
     }
 
     changeSpeaker(speaker) {

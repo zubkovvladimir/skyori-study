@@ -11,12 +11,13 @@
 
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/sky.css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/tagsinput.css">
 
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
+
+    {{content-for "body-footer"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/sky.js"></script>
@@ -24,7 +25,5 @@
     <script src="{{rootURL}}js/popper.min.js"></script>
     <script src="{{rootURL}}js/tagsinput.js"></script>
     <script src="{{rootURL}}js/bootstrap-file.js"></script>
-
-    {{content-for "body-footer"}}
   </body>
 </html>
