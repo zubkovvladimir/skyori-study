@@ -8,6 +8,7 @@ export default class BookController extends Controller {
     queryParams = ['search'];
 
     @tracked search = '';
+    @tracked isLoading;
   
     @action
     async deleteBook(id) {

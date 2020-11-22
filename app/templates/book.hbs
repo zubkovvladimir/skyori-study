@@ -19,6 +19,11 @@
                 </form>
             </div>
         </div>
+        {{#if this.isLoading}}
+        <div class="loading">
+            <img class="loading-img" src="clipart-cat-animated-gif-8.gif" alt="loading gif">
+        </div>
+        {{else}}
         <div class="row row-cols-1 row-cols-md-3 fix-margin">
             {{#each this.model as |book|}}
             <div class="col mb-4">
@@ -70,6 +75,7 @@
             </div>
             {{/each}}
         </div>
+        {{/if}}
     </div>
 </div>
 {{outlet}}
