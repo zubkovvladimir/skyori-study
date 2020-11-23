@@ -5,6 +5,10 @@ import { tracked } from '@glimmer/tracking';
 
 export default class SpeakerController extends Controller {
     @service dataService;
+
+    queryParams = ['search'];
+    
+    @tracked search = '';
     @tracked isLoading;
   
     @action
