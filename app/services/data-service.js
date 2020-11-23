@@ -45,6 +45,7 @@ export default class DataServiceService extends Service {
     }
 
     createBook(book) {
+      book.features.cover = book.features.cover ? book.features.cover : "book-cover.jpg";
       return fetch(`${config.APP.backEndURL}/books`, {
         method: 'POST',
         headers: {
