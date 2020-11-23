@@ -2,8 +2,8 @@ import Service from '@ember/service';
 import config from 'sky/config/environment';
 
 export default class DataServiceService extends Service {
-    async getBooks(searchValue) {
-      let searchSegm = searchValue ? `?q=${searchValue}` : '';
+    async getBooks(searchValue, searchTagValue) {
+      let searchSegm = searchValue ? `?q=${searchValue}` : (searchTagValue? `?tags_like=${searchTagValue}` : '');
       let response = await fetch(`${config.APP.backEndURL}/books${searchSegm}`);
       return response.json();
     }

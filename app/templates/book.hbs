@@ -8,14 +8,15 @@
             <div class="col-md-auto align-self-start">
                 <form class="form-inline">
                     {{!-- <input class="form-control mr-2 search-long" type="search" placeholder="Найти по полям" aria-label="Найти по полям"> --}}
-                    {{input type="text" class="form-control mr-2 search-long" placeholder="Найти по полям" aria-label="Найти по полям" value=search}}
-                    <button class="btn btn-outline-primary my-2" type="submit">Найти</button>
+                    {{!-- {{input type="text" class="form-control mr-2 search-long" placeholder="Найти по полям" aria-label="Найти по полям" value=search}} --}}
+                    <input type="text" placeholder="Найти по полям" class="form-control mr-2 search-long" aria-label="Найти по полям" id="searchString" value="{{searchQuery}}" oninput={{action "setSearchQuery" value="target.value"}} />
+                    <button type="button" class="btn btn-outline-primary my-2" id="searchAction" onclick={{action "searchBooks" searchQuery}}>Найти</button>
                 </form>
             </div>
             <div class="col-md-auto">
                 <form class="form-inline">
-                    <input class="form-control mr-2" type="search" placeholder="Поиск по тегам" aria-label="Найти по тегам">
-                    <button class="btn btn-outline-primary my-2" type="submit">Поиск</button>
+                    <input class="form-control mr-2" type="search" placeholder="Поиск по тегам" aria-label="Найти по тегам" id="searchTagString" value="{{searchTagQuery}}" oninput={{action "setSearchTagQuery" value="target.value"}} />
+                    <button type="button" class="btn btn-outline-primary mr-2" id="searchAction" onclick={{action "searchTagBooks" searchTagQuery}}>Найти</button>
                 </form>
             </div>
         </div>
