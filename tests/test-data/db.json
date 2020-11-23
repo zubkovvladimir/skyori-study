@@ -1,144 +1,174 @@
 {
-    "speakers": [
-        {
-          "id": 1,
-          "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqxZjYHeWaltF1nPTL0NzoeAPwqQWCMjrGw&usqp=CAU",
-          "name": {
-            "firstName": "Ivan",
-            "lastName": "Ivanov",
-            "patronymic": "Ivanovich"
-          }
-        },
-        {
-          "id": 2,
-          "photo": "https://www.myforfaitmobile.com/wp-content/uploads/backup/2017/11/clement.png",
-          "name": {
-            "firstName": "Petr",
-            "lastName": "Petrov",
-            "patronymic": "Petrovich"        
-            }
-          },
-        {
-          "id": 3,
-          "photo": "https://allthingsd.com/files/2013/07/hunterwalk5-e1320001548309-300x300.jpg",
-          "name": {
-            "firstName": "Sergey",
-            "lastName": "Sergeev",
-            "patronymic": "Sergeevich"        
-            }
-          },
-        {
-          "id": 4,
-          "photo": "https://cdn.pixabay.com/photo/2016/03/31/19/10/avatar-1294773_960_720.png",
-          "name": {
-            "firstName": "Anton",
-            "lastName": "Antonov",
-            "patronymic": "Antonovich"        
-            }
-          },
-        {
-          "id": 5,
-          "photo": "https://cdn.pixabay.com/photo/2016/03/31/19/10/avatar-1294776_960_720.png",
-          "name": {
-            "firstName": "Dmitry",
-            "lastName": "Dmitriev",
-            "patronymic": "Dmitrievich"        
-            }
-          },
-        {
-          "id": 6,
-          "photo": "http://visualrian.ru/images/0001/2123/67/000121236764_RIAN-ID-5593959.jpg",
-          "name": {
-            "firstName": "Donald",
-            "lastName": "Trump",
-            "patronymic": "Ivanovich"       
-            }
-           }
-    ],
-    "books": [
-        {
-          "id": 1,
-          "name": "Clean Code",
-          "features": {
-            "number": 898,
-            "rate": 34,
-            "tags": ["эффективность", "эффективность"],
-            "cover": "https://images-na.ssl-images-amazon.com/images/I/51b7XbfMIIL.jpg"
-          },          
-          "author": {
-            "firstName": "Robert C.",
-            "lastName": "Martin"
-          }
-        },
-        {
-          "id": 2,
-          "name": "Code Complete",
-          "features": {
-            "number": 787,
-            "rate": 45,
-            "tags": ["суперкнига", "суперкнига"],
-            "cover": "https://images-na.ssl-images-amazon.com/images/I/71CjT0N23ML.jpg"
-          },          
-          "author": {
-            "firstName": "Steve",
-            "lastName": "McConnell"
-          }
-        },
-        {
-          "id": 3,
-          "name": "Clean Architecture",
-          "features": {
-            "number": 567,
-            "rate": 98,
-            "tags": ["суперкнига", "суперкнига"],
-            "cover": "https://m.media-amazon.com/images/I/411csr6Nn0L.jpg"
-          },          
-          "author": {
-            "firstName": "Robert C.",
-            "lastName": "Martin"
-          }
-        },
-        {
-          "id": 4,
-          "name": "Eloquent JavaScript",
-          "features": {
-            "number": 345,
-            "rate": 67,
-            "tags": ["суперкнига", "суперкнига"],
-            "cover": "https://eloquentjavascript.net/img/cover.jpg"
-          },          
-          "author": {
-            "firstName": "Marijn",
-            "lastName": "Haverbeke"
-          }
-        },
-        {
-          "id": 5,
-          "name": "Hyperfocus",
-          "features": {
-            "number": 456,
-            "rate": 23,
-            "tags": ["суперкнига", "суперкнига"],
-            "cover": "https://alifeofproductivity.com/wp-content/uploads/2019/08/HyperFocusDropShadow-698x1024.png"
-          },          
-          "author": {
-            "firstName": "Chris",
-            "lastName": "Bailey"
-          }
-        },
-        {
-          "id": 6,
-          "name": "Grokking Algorithms",
-          "features": {
-            "number": 899,
-            "rate": 88,
-            "tags": ["суперкнига", "суперкнига"],
-            "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxTljS7pmeAdN90gkl2xcIchNYWK_3H6Njw&usqp=CAU"
-          },          
-          "author": {
-            "firstName": "Aditya Y.",
-            "lastName": "Bhargava"
-          }
-        }
-    ]
-  }
+  "speakers": [
+    {
+      "id": 1,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqxZjYHeWaltF1nPTL0NzoeAPwqQWCMjrGw&usqp=CAU",
+      "name": {
+        "firstName": "Ivan",
+        "lastName": "Ivanov",
+        "patronymic": "Ivanovich"
+      }
+    },
+    {
+      "id": 2,
+      "photo": "https://www.myforfaitmobile.com/wp-content/uploads/backup/2017/11/clement.png",
+      "name": {
+        "firstName": "Petr",
+        "lastName": "Petrov",
+        "patronymic": "Petrovich"
+      }
+    },
+    {
+      "id": 3,
+      "photo": "https://allthingsd.com/files/2013/07/hunterwalk5-e1320001548309-300x300.jpg",
+      "name": {
+        "firstName": "Sergey",
+        "lastName": "Sergeev",
+        "patronymic": "Sergeevich"
+      }
+    },
+    {
+      "id": 4,
+      "photo": "https://cdn.pixabay.com/photo/2016/03/31/19/10/avatar-1294773_960_720.png",
+      "name": {
+        "firstName": "Anton",
+        "lastName": "Antonov",
+        "patronymic": "Antonovich"
+      }
+    },
+    {
+      "id": 5,
+      "photo": "https://cdn.pixabay.com/photo/2016/03/31/19/10/avatar-1294776_960_720.png",
+      "name": {
+        "firstName": "Dmitry",
+        "lastName": "Dmitriev",
+        "patronymic": "Dmitrievich"
+      }
+    },
+    {
+      "id": 6,
+      "photo": "http://visualrian.ru/images/0001/2123/67/000121236764_RIAN-ID-5593959.jpg",
+      "name": {
+        "firstName": "Donald",
+        "lastName": "Trump",
+        "patronymic": "Ivanovich"
+      }
+    },
+    {
+      "photo": "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png",
+      "name": {
+        "lastName": "ss",
+        "firstName": "",
+        "patronymic": ""
+      },
+      "id": 8
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "Clean Code",
+      "author": "Robert C. Martin",
+      "features": {
+        "number": 398,
+        "rate": 34,
+        "tags": [
+          "эффективность",
+          "эффективность"
+        ],
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/51b7XbfMIIL.jpg",
+        "description": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Code Complete",
+      "author": "Steve McConnell",
+      "features": {
+        "number": 787,
+        "rate": 45,
+        "tags": [
+          "суперкнига",
+          "суперкнига"
+        ],
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/71CjT0N23ML.jpg",
+        "description": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clean Architecture",
+      "author": "Robert C. Martin",
+      "features": {
+        "number": 567,
+        "rate": 98,
+        "tags": [
+          "суперкнига",
+          "суперкнига"
+        ],
+        "cover": "https://m.media-amazon.com/images/I/411csr6Nn0L.jpg",
+        "description": "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Eloquent JavaScript",
+      "author": "Marijn Haverbeke",
+      "features": {
+        "number": 345,
+        "rate": 67,
+        "tags": [
+          "суперкнига",
+          "суперкнига"
+        ],
+        "cover": "https://eloquentjavascript.net/img/cover.jpg",
+        "description": "https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming-ebook/dp/B07C96Q217"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Hyperfocus",
+      "author": "Chris Bailey",
+      "features": {
+        "number": 456,
+        "rate": 23,
+        "tags": [
+          "суперкнига",
+          "суперкнига"
+        ],
+        "cover": "https://alifeofproductivity.com/wp-content/uploads/2019/08/HyperFocusDropShadow-698x1024.png",
+        "description": "https://www.amazon.com/Hyperfocus-More-Productive-World-Distraction/dp/0525522239"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Grokking Algorithms",
+      "author": "Aditya Y. Bhargava",
+      "features": {
+        "number": 899,
+        "rate": 88,
+        "tags": [
+          "суперкнига",
+          "суперкнига"
+        ],
+        "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxTljS7pmeAdN90gkl2xcIchNYWK_3H6Njw&usqp=CAU",
+        "description": "https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Gdsssssssssssssssssdsdsd",
+      "author": "Aditya Y. Bhargava",
+      "features": {
+        "number": 899,
+        "rate": 88,
+        "tags": [
+          "one",
+          "two"
+        ],
+        "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxTljS7pmeAdN90gkl2xcIchNYWK_3H6Njw&usqp=CAU",
+        "description": "https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230"
+      }
+    }
+  ]
+}

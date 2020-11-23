@@ -2,8 +2,8 @@ import Service from '@ember/service';
 import config from 'sky/config/environment';
 
 export default class DataServiceService extends Service {
-    async getBooks(searchValue, searchTagValue) {
-      let searchSegm = searchValue ? `?q=${searchValue}` : (searchTagValue? `?tags_like=${searchTagValue}` : '');
+    async getBooks(searchValue, searchByTagName) {
+      let searchSegm = searchValue ? `?q=${searchValue}` : (searchByTagName? `?features.tags_like=${searchByTagName}` : '');
       let response = await fetch(`${config.APP.backEndURL}/books${searchSegm}`);
       return response.json();
     }
@@ -55,6 +55,7 @@ export default class DataServiceService extends Service {
     }
 
     createSpeaker(speaker) {
+      speaker.photo = speaker.photo ? speaker.photo : "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png";
       return fetch(`${config.APP.backEndURL}/speakers`, {
         method: 'POST',
         headers: {
