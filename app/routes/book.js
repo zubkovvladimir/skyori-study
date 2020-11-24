@@ -10,7 +10,7 @@ export default class BookRoute extends Route {
             refreshModel: true
         },
         searchByTag:{
-          refreshModel: true
+            refreshModel: true
         }
     }
 
