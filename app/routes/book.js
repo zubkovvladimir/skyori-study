@@ -12,12 +12,14 @@ export default class BookRoute extends Route {
     }
 
     async model( { search, searchByTag } ) {
+        if (search) {
+            return this.store.query('book', { q: search });
+          }
+        if (searchByTag) {
+            return this.store.query('book', { q: searchByTag });
+        }
 
         return this.store.findAll("book");
-    }
-
-    setupController(controller, model) {
-        super.setupController(...arguments);
     }
 
     @action

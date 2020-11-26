@@ -6,7 +6,6 @@ export default class BookModel extends Model {
     @attr('number') rate;
     @attr('string') tags;
     @attr('string') cover;
-    @attr('string') firstName;
-    @attr('string') lastName;
+    @attr('string') author;
     @attr('string') description;
 }
