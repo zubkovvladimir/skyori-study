@@ -15,22 +15,11 @@ export default class BookRoute extends Route {
     }
 
     async model( { search, searchByTag } ) {
-        let promise = new Promise ((resolve, reject) => {
-            later(() => {
-                resolve(this.dataService.getBooks(search, searchByTag));
-            }, 1000);            
-            }).then((data) => {
-                this.controller.model = data;            
-            }).finally(() => {
-                if(promise === this.lastPromise) {
-                    this.controller.isLoading = false;
-                }
-            })
-
-            this.lastPromise = promise;
-        return {
-            isLoading: true
+        if(search) {
+            return this.store.query("book", { q: search });
         }
+
+        return this.store.findAll("book");
     }
 
     setupController(controller, model) {
