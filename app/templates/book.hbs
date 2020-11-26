@@ -6,17 +6,17 @@
         </div>
         <div class="form-row navbar-panel justify-content-between">
             <div class="col-md-auto align-self-start">
-                <form class="form-inline">
+                <div class="form-inline">
                     {{!-- <input class="form-control mr-2 search-long" type="search" placeholder="Найти по полям" aria-label="Найти по полям"> --}}
                     {{input type="text" class="form-control mr-2 search-long" placeholder="Найти по полям" aria-label="Найти по полям" value=search}}
-                    <button class="btn btn-outline-primary my-2" type="submit">Найти</button>
-                </form>
+                    {{!-- <button class="btn btn-outline-primary my-2" type="submit">Найти</button> --}}
+                </div>
             </div>
             <div class="col-md-auto">
-                <form class="form-inline">
+                <div class="form-inline">
                      <Input @class="form-control mr-2" @type="search" @aria-label="Найти по тегам" @placeholder="Поиск по тегам" @value={{searchByTag}} />
-                    <button class="btn btn-outline-primary my-2" type="submit">Поиск</button>
-                </form>
+                    {{!-- <button class="btn btn-outline-primary my-2" type="submit">Поиск</button> --}}
+                </div>
             </div>
         </div>
         {{#if this.isLoading}}
