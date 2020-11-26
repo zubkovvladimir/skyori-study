@@ -6,20 +6,14 @@ export default class BookSerializer extends ApplicationSerializer {
         let hashCopy = Object.assign({}, hash);
         hashCopy.attributes = {};
         hashCopy.attributes.name = hashCopy.name;
-        hashCopy.attributes.author = hashCopy.author;
-        hashCopy.attributes.features = {};
-        hashCopy.attributes.features.number = hashCopy.features.number;
-        hashCopy.attributes.features.rate = hashCopy.features.rate;
-        hashCopy.attributes.features.tags = hashCopy.features.tags;
-        hashCopy.attributes.features.cover = hashCopy.features.cover;
-        hashCopy.attributes.features.description = hashCopy.features.description;
+        hashCopy.attributes.number = hashCopy.number;
+        hashCopy.attributes.rate = hashCopy.rate;
+        hashCopy.attributes.tags = hashCopy.tags;
+        hashCopy.attributes.cover = hashCopy.cover;
+        hashCopy.attributes.description = hashCopy.description;
+        hashCopy.attributes.firstName = hashCopy.firstName;
+        hashCopy.attributes.lastName = hashCopy.lastName;
         delete hashCopy.name;
-        delete hashCopy.author;
-        delete hashCopy.features.number;
-        delete hashCopy.features.rate;
-        delete hashCopy.features.tags;
-        delete hashCopy.features.cover;
-        delete hashCopy.features.description;
         hash = {
             data: hashCopy
         };
