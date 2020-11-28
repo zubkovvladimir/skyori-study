@@ -24,15 +24,15 @@ export default class DataServiceService extends Service {
       return response.json();
     }
 
-    changeSpeaker(speaker) {
-      return fetch(`${config.APP.backEndURL}/speakers/${speaker.id}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(speaker)
-      });
-    }
+    // changeSpeaker(speaker) {
+    //   return fetch(`${config.APP.backEndURL}/speakers/${speaker.id}`, {
+    //     method: 'PATCH',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(speaker)
+    //   });
+    // }
 
     changeBook(book) {
       return fetch(`${config.APP.backEndURL}/books/${book.id}`, {

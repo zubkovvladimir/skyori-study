@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 
 export default class CreateSpeakerController extends Controller {  
     @action
-    async saveSpeaker(speaker) {
+    async changeSpeaker(speaker) {
       try {
         let newSpeaker =  this.store.createRecord('speaker', speaker);
         await newSpeaker.save();
