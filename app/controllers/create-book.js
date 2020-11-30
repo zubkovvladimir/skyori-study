@@ -1,21 +1,19 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
+import { inject as service } from '@ember/service';
 
 export default class CreateBookController extends Controller {
+    @service dataService;
     @tracked tags = [];
   
     @action
-    async saveBook(book) {
-      try {
-        let newAuthor =  this.store.createRecord('book', book);
-        await newAuthor.save();
-    
-        this.transitionToRoute('book');
-      }
-      catch(e) {
-        this.send('error', e)
-      }
+    async saveBook(evt) {
+      evt.preventDefault();
+      console.log(this.model);
+      await this.dataService.createBook(this.model);
+  
+      this.transitionToRoute('book');
     }
 
     @action

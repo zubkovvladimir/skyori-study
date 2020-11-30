@@ -15,5 +15,5 @@ Router.map(function() {
   this.route('create-speaker', { path: '/speakers/new'});
   this.route('page-not-found', { path: '*path'});
   this.route('loading');
-  this.route('error', { path: "/:error"});
+  this.route('error');
 });
