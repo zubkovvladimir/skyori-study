@@ -1,11 +1,9 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
-import { tracked } from '@glimmer/tracking';  
 import { inject as service } from '@ember/service';
 
 export default class EditBookController extends Controller {
   @service dataService;
-  @tracked tags = [];
 
   @action
   async changeBook(evt) {
@@ -14,17 +12,6 @@ export default class EditBookController extends Controller {
     await this.dataService.changeBook(this.model);
 
     this.transitionToRoute('book');
-  }
-
-  @action
-  changeTags(newTags) {
-    this.model.features.tags = [...newTags];
-    console.log(this.model.features.tags);
-  }
-
-  @action
-  change() {
-    this.model.features.tags = [];
   }
 
   @action
