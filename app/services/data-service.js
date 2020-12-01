@@ -2,8 +2,8 @@ import Service from '@ember/service';
 import config from 'sky/config/environment';
 
 export default class DataServiceService extends Service {
-    async getBooks(searchValue, searchTagValue) {
-      let searchSegm = searchValue ? `?q=${searchValue}` : (searchTagValue? `?tags_like=${searchTagValue}` : '');
+    async getBooks(searchValue, searchByTagName) {
+      let searchSegm = searchValue ? `?q=${searchValue}` : (searchByTagName? `?features.tags_like=${searchByTagName}` : '');
       let response = await fetch(`${config.APP.backEndURL}/books${searchSegm}`);
       return response.json();
     }
@@ -24,15 +24,15 @@ export default class DataServiceService extends Service {
       return response.json();
     }
 
-    changeSpeaker(speaker) {
-      return fetch(`${config.APP.backEndURL}/speakers/${speaker.id}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(speaker)
-      });
-    }
+    // changeSpeaker(speaker) {
+    //   return fetch(`${config.APP.backEndURL}/speakers/${speaker.id}`, {
+    //     method: 'PATCH',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(speaker)
+    //   });
+    // }
 
     changeBook(book) {
       return fetch(`${config.APP.backEndURL}/books/${book.id}`, {
@@ -45,6 +45,7 @@ export default class DataServiceService extends Service {
     }
 
     createBook(book) {
+      book.features.cover = book.features.cover ? book.features.cover : "book-cover.jpg";
       return fetch(`${config.APP.backEndURL}/books`, {
         method: 'POST',
         headers: {
@@ -55,6 +56,7 @@ export default class DataServiceService extends Service {
     }
 
     createSpeaker(speaker) {
+      speaker.photo = speaker.photo ? speaker.photo : "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png";
       return fetch(`${config.APP.backEndURL}/speakers`, {
         method: 'POST',
         headers: {
