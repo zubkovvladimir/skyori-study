@@ -1,5 +1,5 @@
 <select multiple="multiple" data-role="tagsinput" id="inputTags" {{init-input-tags-events @tags this.tagAdded this.tagRemoved}}>
-  {{#each this.model.features.tags as |tag|}}
+  {{#each this.model.tags as |tag|}}
     <option value="{{tag}}" selected="selected">{{tag}}</option>
   {{/each}}
 </select>

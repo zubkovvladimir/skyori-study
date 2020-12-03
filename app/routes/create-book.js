@@ -5,10 +5,8 @@ export default class CreateBookRoute extends Route {
         return {
             name: '',
             author: '',
-            features: {
-                number: '',
-                description: ''
-            }
+            number: '',
+            description: ''
         }
     }
 }

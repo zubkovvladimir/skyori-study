@@ -6,17 +6,17 @@
         </div>
         <div class="form-row navbar-panel justify-content-between">
             <div class="col-md-auto align-self-start">
-                <div class="form-inline">
+                <form class="form-inline">
                     {{!-- <input class="form-control mr-2 search-long" type="search" placeholder="Найти по полям" aria-label="Найти по полям"> --}}
                     {{input type="text" class="form-control mr-2 search-long" placeholder="Найти по полям" aria-label="Найти по полям" value=search}}
                     {{!-- <button class="btn btn-outline-primary my-2" type="submit">Найти</button> --}}
-                </div>
+                </form>
             </div>
             <div class="col-md-auto">
-                <div class="form-inline">
+                <form class="form-inline">
                      <Input @class="form-control mr-2" @type="search" @aria-label="Найти по тегам" @placeholder="Поиск по тегам" @value={{searchByTag}} />
                     {{!-- <button class="btn btn-outline-primary my-2" type="submit">Поиск</button> --}}
-                </div>
+                </form>
             </div>
         </div>
         {{#if this.isLoading}}
@@ -36,9 +36,9 @@
                         <li class="list-group-item">
                             <div><strong>Автор</strong>: {{book.author}}</div>
                             <div><strong>Количество страниц</strong>: {{book.number}}</div>
-                            <div><strong>Теги</strong>: 
+                            <div><strong>Теги</strong>:
                             {{#each book.tags as |tag|}}
-                                <a href="#" class="tag-link"><span class="small">#{{tag}}</span></a> 
+                                <a href="#" class="tag-link"><span class="small">#{{tag}}</span></a>
                             {{/each}}
                             </div>
                         </li>

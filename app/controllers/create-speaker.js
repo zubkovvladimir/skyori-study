@@ -1,17 +1,37 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
+import { inject as service } from '@ember/service';
 
-export default class CreateSpeakerController extends Controller {  
+export default class CreateSpeakerController extends Controller {
+    @service dataService;
+
     @action
-    async changeSpeaker(speaker) {
-      try {
-        let newSpeaker =  this.store.createRecord('speaker', speaker);
-        await newSpeaker.save();
-    
-        this.transitionToRoute('speaker');
-      }
-      catch(e) {
-        this.send('error', e)
-      }
+    async saveSpeaker(evt) {
+      evt.preventDefault();
+
+      await this.dataService.createSpeaker(this.model);
+
+      this.transitionToRoute('speaker');
+    }
+
+    @action
+    changeLastName(lastName) {
+      this.model.lastName = lastName;
+    }
+
+    @action
+    changeFirstName(firstName) {
+      this.model.firstName = firstName;
+    }
+
+    @action
+    changePatronymic(patronymic) {
+      this.model.patronymic = patronymic;
+    }
+
+    reset() {
+        controller.lastName = '';
+        controller.firstName = '';
+        controller.patronymic = '';
     }
 }

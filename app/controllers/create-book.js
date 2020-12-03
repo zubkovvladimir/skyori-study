@@ -1,58 +1,56 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
+import { inject as service } from '@ember/service';
 
 export default class CreateBookController extends Controller {
+    @service dataService;
     @tracked tags = [];
-  
+
     @action
-    async saveBook(book) {
-      try {
-        let newAuthor =  this.store.createRecord('book', book);
-        await newAuthor.save();
-    
-        this.transitionToRoute('book');
-      }
-      catch(e) {
-        this.send('error', e)
-      }
+    async saveBook(evt) {
+      evt.preventDefault();
+      console.log(this.model);
+      await this.dataService.createBook(this.model);
+
+      this.transitionToRoute('book');
     }
 
     @action
     changeTags(newTags) {
-      this.model.features.tags = [...newTags];
-      console.log(this.model.features.tags);
+      this.model.tags = [...newTags];
+      console.log(this.model.tags);
     }
-  
+
     @action
     change() {
-      this.model.features.tags = [];
+      this.model.tags = [];
     }
-  
+
     @action
     changeName(name) {
       this.model.name = name;
     }
-  
+
     @action
     changeAuthor(author) {
       this.model.author = author;
     }
-  
+
     @action
     changeNumber(number) {
-      this.model.features.number = number;
+      this.model.number = number;
     }
-  
+
     @action
     changeDescription(description) {
-      this.model.features.description = description;
+      this.model.description = description;
     }
 
     reset() {
         controller.name = '';
         controller.author = '';
-        controller.features.number = '';
-        controller.features.description = '';
+        controller.number = '';
+        controller.description = '';
     }
 }

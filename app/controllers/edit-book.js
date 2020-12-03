@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
-import { tracked } from '@glimmer/tracking';  
+import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
 
 export default class EditBookController extends Controller {
@@ -18,13 +18,13 @@ export default class EditBookController extends Controller {
 
   @action
   changeTags(newTags) {
-    this.model.features.tags = [...newTags];
-    console.log(this.model.features.tags);
+    this.model.tags = [...newTags];
+    console.log(this.model.tags);
   }
 
   @action
   change() {
-    this.model.features.tags = [];
+    this.model.tags = [];
   }
 
   @action
@@ -39,11 +39,11 @@ export default class EditBookController extends Controller {
 
   @action
   changeNumber(number) {
-    this.model.features.number = number;
+    this.model.number = number;
   }
 
   @action
   changeDescription(description) {
-    this.model.features.description = description;
+    this.model.description = description;
   }
 }

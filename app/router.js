@@ -14,5 +14,4 @@ Router.map(function() {
   this.route('create-book', { path: '/book/new'});
   this.route('create-speaker', { path: '/speakers/new'});
   this.route('page-not-found', { path: '*path'});
-  this.route('error', { path: "/:error"});
 });
