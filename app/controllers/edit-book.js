@@ -8,18 +8,22 @@ export default class EditBookController extends Controller {
   @tracked tags = [];
 
   @action
-  async changeBook(evt) {
-    evt.preventDefault();
+  async saveBook(book) {
+    let bookToSave = Object.assign({}, book);
+    bookToSave.id = this.model.id;
+    try {
+      await this.dataService.changeBook(bookToSave);
 
-    await this.dataService.changeBook(this.model);
-
-    this.transitionToRoute('book');
+      this.transitionToRoute('book');
+    }
+    catch(e) {
+      this.send('error', e)
+    }
   }
 
   @action
   changeTags(newTags) {
     this.model.tags = [...newTags];
-    console.log(this.model.tags);
   }
 
   @action
