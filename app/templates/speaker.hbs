@@ -18,18 +18,27 @@
             <img class="loading-img" src="clipart-cat-animated-gif-8.gif" alt="loading gif">
         </div>
         {{else}}
-        <div class="row row-cols-1 row-cols-md-3">
-            {{#each this.model as |speaker|}}
-              <SpeakerItem
-                @photo={{speaker.photo}}
-                @firstName={{speaker.firstName}}
-                @lastName={{speaker.lastName}}
-                @patronymic={{speaker.patronymic}}
-                @id={{speaker.id}}
-                @onClick={{this.deleteSpeaker}}
-              />
-            {{/each}}
-        </div>
+          {{#if this.isError}}
+            <div class="error">
+                <img class="error-img" src="error.gif" alt="Error">
+                {{#if this.error}}
+                  <h2 class="error-text">Error: {{this.error}}</h2>
+                {{/if}}
+            </div>
+          {{else}}
+            <div class="row row-cols-1 row-cols-md-3">
+                {{#each this.model as |speaker|}}
+                  <SpeakerItem
+                    @photo={{speaker.photo}}
+                    @firstName={{speaker.firstName}}
+                    @lastName={{speaker.lastName}}
+                    @patronymic={{speaker.patronymic}}
+                    @id={{speaker.id}}
+                    @onClick={{this.deleteSpeaker}}
+                  />
+                {{/each}}
+            </div>
+          {{/if}}
         {{/if}}
     </div>
 </div>

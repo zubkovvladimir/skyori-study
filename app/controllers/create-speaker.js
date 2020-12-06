@@ -7,8 +7,13 @@ export default class CreateSpeakerController extends Controller {
 
     @action
     async saveSpeaker(speaker) {
-      await this.dataService.createSpeaker(speaker);
+      try {
+        await this.dataService.createSpeaker(speaker);
 
-      this.transitionToRoute('speaker');
+        this.transitionToRoute('speaker');
+      }
+      catch(e) {
+        this.send('error', e)
+      }
     }
 }

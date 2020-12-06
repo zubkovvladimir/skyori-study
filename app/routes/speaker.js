@@ -16,10 +16,15 @@ export default class SpeakerRoute extends Route {
         let promise = new Promise ((resolve, reject) => {
             later(() => {
                 resolve(this.dataService.getSpeakers(search));
-            }, 1000);            
+            }, 1000);
             }).then((data) => {
-                this.controller.model = data;            
-            }).finally(() => {
+                this.controller.model = data;
+            })
+            .catch((e) => {
+              this.controller.isError = true;
+              this.controller.error = e.message;
+            })
+            .finally(() => {
                 if(promise === this.lastPromise) {
                     this.controller.isLoading = false;
                 }
@@ -35,6 +40,7 @@ export default class SpeakerRoute extends Route {
         super.setupController(...arguments);
 
         controller.isLoading = true;
+        controller.isError = false;
     }
 
     @action

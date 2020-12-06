@@ -1,3 +1,6 @@
-<div class="wel">
-    Error...
+<div class="error">
+    <img class="error-img" src="error.gif" alt="Error">
+    {{#if model.error}}
+      <h2 class="error-text">Error: {{model.error}}</h2>
+    {{/if}}
 </div>
