@@ -5,7 +5,7 @@ import { inject as service } from '@ember/service';
 
 export default class CreateBookController extends Controller {
   @service dataService;
-  @tracked tags = [];
+  @tracked tags;
 
   @action
   async saveBook(book) {
@@ -17,15 +17,5 @@ export default class CreateBookController extends Controller {
     catch(e) {
       this.send('error', e)
     }
-  }
-
-  @action
-  changeTags(newTags) {
-    this.model.tags = [...newTags];
-  }
-
-  @action
-  change() {
-    this.model.tags = [];
   }
 }

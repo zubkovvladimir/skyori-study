@@ -4,7 +4,7 @@
       "id": 1,
       "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqxZjYHeWaltF1nPTL0NzoeAPwqQWCMjrGw&usqp=CAU",
       "firstName": "Ivan",
-      "lastName": "Ivanova",
+      "lastName": "Ivanov",
       "patronymic": "Ivanovich"
     },
     {
@@ -24,9 +24,9 @@
     {
       "id": 4,
       "photo": "https://cdn.pixabay.com/photo/2016/03/31/19/10/avatar-1294773_960_720.png",
-      "firstName": "Antonqqqqqqqqqqqq",
-      "lastName": "Antonovsssssssssssss",
-      "patronymic": "Antonovichqqqqqqqqqqqqqqqqqq"
+      "firstName": "Anton",
+      "lastName": "Antonov",
+      "patronymic": "Antonovich"
     },
     {
       "id": 5,
@@ -41,58 +41,44 @@
       "firstName": "Donald",
       "lastName": "Trump",
       "patronymic": "Ivanovich"
-    },
-    {
-      "firstName": "aaaaaaa",
-      "lastName": "aaaaaaa",
-      "patronymic": "aaaaaaaaaaaaaaaaaaaa",
-      "photo": "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png",
-      "id": 7
-    },
-    {
-      "firstName": "ssssssssssssssssssssssssssssssssssssssssssssss",
-      "lastName": "sssssssssssssssss",
-      "patronymic": "ssssss",
-      "photo": "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png",
-      "id": 8
-    },
-    {
-      "firstName": "qqqqqq",
-      "lastName": "qqqq",
-      "patronymic": "ddddddddd",
-      "photo": "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png",
-      "id": 9
-    },
-    {
-      "firstName": "as",
-      "lastName": "asd",
-      "patronymic": "a",
-      "photo": "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png",
-      "id": 10
     }
   ],
   "books": [
     {
       "id": 1,
-      "name": "Clean Codesssssssss",
+      "name": "Clean Code",
       "number": 398,
       "rate": 34,
       "tags": [
-        "sdsdds",
-        "sssssssssss"
+        "эффективность",
+        "суперкнига"
       ],
       "cover": "https://images-na.ssl-images-amazon.com/images/I/51b7XbfMIIL.jpg",
       "author": "Robert C. Martin",
       "description": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
     },
     {
+      "id": 2,
+      "name": "Code Complete",
+      "number": 787,
+      "rate": 45,
+      "tags": [
+        "суперкнига",
+        "программирование",
+        "asd"
+      ],
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/71CjT0N23ML.jpg",
+      "author": "Steve McConnell",
+      "description": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+    },
+    {
       "id": 3,
-      "name": "Clean Architecturess",
+      "name": "Clean Architecture",
       "number": 567,
       "rate": 98,
       "tags": [
         "суперкнига",
-        "суперкнига"
+        "программирование"
       ],
       "cover": "https://m.media-amazon.com/images/I/411csr6Nn0L.jpg",
       "author": "Robert C. Martin",
@@ -105,7 +91,7 @@
       "rate": 67,
       "tags": [
         "суперкнига",
-        "суперкнига"
+        "программирование"
       ],
       "cover": "https://eloquentjavascript.net/img/cover.jpg",
       "author": "Marijn Haverbeke",
@@ -118,7 +104,7 @@
       "rate": 23,
       "tags": [
         "суперкнига",
-        "суперкнига"
+        "программирование"
       ],
       "cover": "https://alifeofproductivity.com/wp-content/uploads/2019/08/HyperFocusDropShadow-698x1024.png",
       "author": "Chris Bailey",
@@ -131,75 +117,11 @@
       "rate": 88,
       "tags": [
         "суперкнига",
-        "суперкнига"
+        "программирование"
       ],
       "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxTljS7pmeAdN90gkl2xcIchNYWK_3H6Njw&usqp=CAU",
       "author": "Aditya Y. Bhargava",
       "description": "https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230"
-    },
-    {
-      "name": "ssssssssss",
-      "author": "ssss",
-      "number": "111",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 7
-    },
-    {
-      "name": "",
-      "author": "",
-      "number": "",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 8
-    },
-    {
-      "name": "sssssssssss",
-      "author": "",
-      "number": "",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 9
-    },
-    {
-      "name": "",
-      "author": "",
-      "number": "",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 10
-    },
-    {
-      "name": "",
-      "author": "",
-      "number": "",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 11
-    },
-    {
-      "name": "",
-      "author": "",
-      "number": "",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 12
-    },
-    {
-      "name": "",
-      "author": "",
-      "number": "",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 13
-    },
-    {
-      "name": "",
-      "author": "",
-      "number": "",
-      "description": "",
-      "cover": "book-cover.jpg",
-      "id": 14
     }
   ]
 }

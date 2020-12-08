@@ -55,15 +55,12 @@ export default class BookFormComponent extends Component {
       author: this._author,
       number: this._number,
       description: this._description,
-      // number: this.args.tags,
+      tags: this.tags,
     });
   }
 
-  // @action
-  // async changeTags() {
-
-  //   this.args.onChange({
-  //     tags: this.args.tags
-  //   });
-  // }
+  @action
+  changeTags(newTags) {
+    this.tags = [...newTags];
+  }
 }

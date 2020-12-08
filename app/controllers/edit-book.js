@@ -20,34 +20,4 @@ export default class EditBookController extends Controller {
       this.send('error', e)
     }
   }
-
-  @action
-  changeTags(newTags) {
-    this.model.tags = [...newTags];
-  }
-
-  @action
-  change() {
-    this.model.tags = [];
-  }
-
-  @action
-  changeName(name) {
-    this.model.name = name;
-  }
-
-  @action
-  changeAuthor(author) {
-    this.model.author = author;
-  }
-
-  @action
-  changeNumber(number) {
-    this.model.number = number;
-  }
-
-  @action
-  changeDescription(description) {
-    this.model.description = description;
-  }
 }

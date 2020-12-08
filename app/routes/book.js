@@ -21,7 +21,12 @@ export default class BookRoute extends Route {
             }, 1000);
             }).then((data) => {
                 this.controller.model = data;
-            }).finally(() => {
+            })
+            .catch((e) => {
+              this.controller.isError = true;
+              this.controller.error = e.message;
+            })
+            .finally(() => {
                 if(promise === this.lastPromise) {
                     this.controller.isLoading = false;
                 }
@@ -36,6 +41,7 @@ export default class BookRoute extends Route {
     setupController(controller, model) {
         super.setupController(...arguments);
 
+        controller.isError = false;
         controller.isLoading = true;
     }
 

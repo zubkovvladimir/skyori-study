@@ -1,12 +1,8 @@
 import Route from '@ember/routing/route';
+import BookModel from '../models/book';
 
 export default class CreateBookRoute extends Route {
     model() {
-        return {
-            name: '',
-            author: '',
-            number: '',
-            description: ''
-        }
+        return new BookModel();
     }
 }
