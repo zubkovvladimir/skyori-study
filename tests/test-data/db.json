@@ -41,6 +41,13 @@
       "firstName": "Donald",
       "lastName": "Trump",
       "patronymic": "Ivanovich"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "patronymic": "aa",
+      "photo": "speaker.png",
+      "id": 10
     }
   ],
   "books": [
@@ -122,6 +129,18 @@
       "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxTljS7pmeAdN90gkl2xcIchNYWK_3H6Njw&usqp=CAU",
       "author": "Aditya Y. Bhargava",
       "description": "https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230"
+    },
+    {
+      "name": "кеаппа",
+      "author": "",
+      "number": "",
+      "description": "",
+      "tags": [
+        "fff",
+        "aaa"
+      ],
+      "cover": "book-cover.jpg",
+      "id": 7
     }
   ]
 }

@@ -56,7 +56,7 @@ export default class DataServiceService extends Service {
     }
 
     createSpeaker(speaker) {
-      speaker.photo = speaker.photo ? speaker.photo : "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png";
+      speaker.photo = speaker.photo ? speaker.photo : "speaker.png";
       return fetch(`${config.APP.backEndURL}/speakers`, {
         method: 'POST',
         headers: {

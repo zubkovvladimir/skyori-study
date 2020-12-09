@@ -47,6 +47,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.APP.backEndURL = 'https://skyori-study.herokuapp.com'
   }
 
   return ENV;
