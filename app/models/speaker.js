@@ -1,9 +1,8 @@
-import Model from '@ember-data/model';
-import { tracked } from '@glimmer/tracking';
+import Model, { attr } from '@ember-data/model';
 
 export default class SpeakerModel extends Model {
-  @tracked photo = '';
-  @tracked lastName = '';
-  @tracked firstName = '';
-  @tracked patronymi = '';
+  @attr('string') firstName;
+  @attr('string') lastName;
+  @attr('string') patronymic;
+  @attr('string') photo;
 }

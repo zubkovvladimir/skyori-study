@@ -48,6 +48,19 @@
       "patronymic": "aa",
       "photo": "speaker.png",
       "id": 10
+    },
+    {
+      "firstName": "",
+      "lastName": "Petrovaaaa",
+      "photo": "speaker.png",
+      "id": 11
+    },
+    {
+      "firstName": "",
+      "lastName": "Petrovaaaa",
+      "patronymic": "",
+      "photo": "speaker.png",
+      "id": 12
     }
   ],
   "books": [

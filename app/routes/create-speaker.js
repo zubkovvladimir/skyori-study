@@ -3,6 +3,11 @@ import SpeakerModel from '../models/speaker';
 
 export default class CreateSpeakerRoute extends Route {
     model() {
-        return new SpeakerModel();
+        return {
+          firstName: '',
+          lastName: '',
+          patronymic: '',
+          photo: ''
+        };
     }
 }
