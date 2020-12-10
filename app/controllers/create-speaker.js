@@ -8,7 +8,10 @@ export default class CreateSpeakerController extends Controller {
     @action
     async saveSpeaker(speaker) {
       try {
-        await this.dataService.createSpeaker(speaker);
+        speaker.photo = speaker.photo ? speaker.photo : "speaker.png";
+
+        let newSpeaker = this.store.createRecord('speaker', speaker);
+        await newSpeaker.save();
 
         this.transitionToRoute('speaker');
       }
