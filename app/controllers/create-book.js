@@ -10,7 +10,10 @@ export default class CreateBookController extends Controller {
   @action
   async saveBook(book) {
     try {
-      await this.dataService.createBook(book);
+      book.cover = book.cover ? book.cover : "book-cover.jpg";
+
+      let newBook = this.store.createRecord('book', book);
+      await newBook.save();
 
       this.transitionToRoute('book');
     }

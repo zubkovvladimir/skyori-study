@@ -7,7 +7,7 @@ export default class CreateBookRoute extends Route {
           author: '',
           number: '',
           description: '',
-          tags: '',
+          tags: [],
           cover: '',
           rate: ''
         };
