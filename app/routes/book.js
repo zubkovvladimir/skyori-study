@@ -15,27 +15,98 @@ export default class BookRoute extends Route {
     }
 
     async model( { search, searchByTag } ) {
-        let promise = new Promise ((resolve, reject) => {
-            later(() => {
-                resolve(this.dataService.getBooks(search, searchByTag));
-            }, 1000);
-            }).then((data) => {
-                this.controller.model = data;
-            })
-            .catch((e) => {
-              this.controller.isError = true;
-              this.controller.error = e.message;
-            })
-            .finally(() => {
-                if(promise === this.lastPromise) {
-                    this.controller.isLoading = false;
-                }
-            })
+      let promise;
 
-            this.lastPromise = promise;
+      if(search) {
+        // return this.store.query('speaker', { q: search });
+        promise = new Promise ((resolve) => {
+        later(() => {
+            resolve(this.store.query('book', { q: search }));
+        }, 1000);
+        }).then((data) => {
+            this.controller.model = data;
+        })
+        .catch((e) => {
+          this.controller.isError = true;
+          this.controller.error = e.message;
+        })
+        .finally(() => {
+            if(promise === this.lastPromise) {
+                this.controller.isLoading = false;
+            }
+        })
+
+        this.lastPromise = promise;
         return {
-            isLoading: true
+          isLoading: true
         }
+      }else if(searchByTag) {
+        // return this.store.query('speaker', { q: search });
+        promise = new Promise ((resolve) => {
+        later(() => {
+            resolve(this.store.query('book', { q: searchByTag }));
+        }, 1000);
+        }).then((data) => {
+            this.controller.model = data;
+        })
+        .catch((e) => {
+          this.controller.isError = true;
+          this.controller.error = e.message;
+        })
+        .finally(() => {
+            if(promise === this.lastPromise) {
+                this.controller.isLoading = false;
+            }
+        })
+
+        this.lastPromise = promise;
+        return {
+          isLoading: true
+        }
+      }
+
+      promise = new Promise ((resolve) => {
+        later(() => {
+            resolve(this.store.findAll('book'));
+        }, 1000);
+        }).then((data) => {
+            this.controller.model = data;
+        })
+        .catch((e) => {
+          this.controller.isError = true;
+          this.controller.error = e.message;
+        })
+        .finally(() => {
+            if(promise === this.lastPromise) {
+                this.controller.isLoading = false;
+            }
+        })
+
+        this.lastPromise = promise;
+        return {
+          isLoading: true
+        }
+        // let promise = new Promise ((resolve, reject) => {
+        //     later(() => {
+        //         resolve(this.store.getBooks(search, searchByTag));
+        //     }, 1000);
+        //     }).then((data) => {
+        //         this.controller.model = data;
+        //     })
+        //     .catch((e) => {
+        //       this.controller.isError = true;
+        //       this.controller.error = e.message;
+        //     })
+        //     .finally(() => {
+        //         if(promise === this.lastPromise) {
+        //             this.controller.isLoading = false;
+        //         }
+        //     })
+
+        //     this.lastPromise = promise;
+        // return {
+        //     isLoading: true
+        // }
     }
 
     setupController(controller, model) {
