@@ -1,18 +1,13 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
-import { tracked } from '@glimmer/tracking';
-import { inject as service } from '@ember/service';
+import { assign } from '@ember/polyfills';
 
 export default class EditBookController extends Controller {
-  @service dataService;
-  @tracked tags = [];
-
   @action
   async saveBook(book) {
-    let bookToSave = Object.assign({}, book);
-    bookToSave.id = this.model.id;
     try {
-      await this.dataService.changeBook(bookToSave);
+      assign(this.model, book);
+      await this.model.save();
 
       this.transitionToRoute('book');
     }

@@ -1,16 +1,13 @@
 import Controller from '@ember/controller';
 import { action } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { assign } from '@ember/polyfills';
 
 export default class EditSpeakerController extends Controller {
-  @service dataService;
-
   @action
   async saveSpeaker(speaker) {
-    let speakerToSave = Object.assign({}, speaker);
-    speakerToSave.id = this.model.id;
     try {
-      await this.dataService.changeSpeaker(speakerToSave);
+      assign(this.model, speaker);
+      await this.model.save();
 
       this.transitionToRoute('speaker');
     }

@@ -18,7 +18,6 @@ export default class BookRoute extends Route {
       let promise;
 
       if(search) {
-        // return this.store.query('speaker', { q: search });
         promise = new Promise ((resolve) => {
         later(() => {
             resolve(this.store.query('book', { q: search }));
@@ -41,10 +40,9 @@ export default class BookRoute extends Route {
           isLoading: true
         }
       }else if(searchByTag) {
-        // return this.store.query('speaker', { q: search });
         promise = new Promise ((resolve) => {
         later(() => {
-            resolve(this.store.query('book', { q: searchByTag }));
+            resolve(this.store.query('book', { tags_like: searchByTag }));
         }, 1000);
         }).then((data) => {
             this.controller.model = data;
@@ -86,27 +84,6 @@ export default class BookRoute extends Route {
         return {
           isLoading: true
         }
-        // let promise = new Promise ((resolve, reject) => {
-        //     later(() => {
-        //         resolve(this.store.getBooks(search, searchByTag));
-        //     }, 1000);
-        //     }).then((data) => {
-        //         this.controller.model = data;
-        //     })
-        //     .catch((e) => {
-        //       this.controller.isError = true;
-        //       this.controller.error = e.message;
-        //     })
-        //     .finally(() => {
-        //         if(promise === this.lastPromise) {
-        //             this.controller.isLoading = false;
-        //         }
-        //     })
-
-        //     this.lastPromise = promise;
-        // return {
-        //     isLoading: true
-        // }
     }
 
     setupController(controller, model) {

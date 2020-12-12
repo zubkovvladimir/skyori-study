@@ -7,7 +7,7 @@ export default class BookFormComponent extends Component {
   @tracked _author;
   @tracked _number;
   @tracked _description;
-  @tracked tags;
+  @tracked tags = [];
 
   nameArgsPrevValue;
   authorArgsPrevValue;
