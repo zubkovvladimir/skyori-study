@@ -13,7 +13,13 @@ export default class BookController extends Controller {
 
     @action
     async deleteBook(id) {
-        await this.dataService.deleteBook(id);
+      try {
+        let deleteBook = this.store.peekRecord('book', id);
+        await deleteBook.destroyRecord();
+      }
+      catch(e) {
+        this.send('error', e)
+      }
     }
 
 }

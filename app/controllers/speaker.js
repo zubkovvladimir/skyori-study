@@ -7,12 +7,18 @@ export default class SpeakerController extends Controller {
     @service dataService;
 
     queryParams = ['search'];
-    
+
     @tracked search = '';
     @tracked isLoading;
-  
+
     @action
     async deleteSpeaker(id) {
-        await this.dataService.deleteSpeaker(id);
+      try {
+        let deletedSpeaker = this.store.peekRecord('speaker', id);
+        await deletedSpeaker.destroyRecord();
+      }
+      catch(e) {
+        this.send('error', e)
+      }
     }
 }
