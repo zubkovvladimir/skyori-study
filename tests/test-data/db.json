@@ -141,37 +141,43 @@
       "id": 1,
       "review": "Одна из лучших книг по программированию, которые я прочитал. По оставленному впечатлению могу сравнить ее с Рефакторингом Фаулера и Паттернами проектирования GoF. Сами мысли, высказанные в книге, являются довольно простыми, но важно то, что практически все они аргументируются с приведением примеров кода: в исходном его виде и после применения рефакторинга. Можно не всегда соглашаться с действиями автора, но логика действий четко прослеживается, а предлагаемые методы рефакторинга заставляют подумать о том, как бы применить их в своем коде. К переводу замечаний почти нет, кроме: номера страниц в указателе терминов некорректны, также не всегда правильно указаны номера страниц в перекрестных ссылках.",
       "linkToVideo": "https://www.youtube.com/watch?v=80-KMebdZr4&ab_channel=%D0%98%D0%B2%D0%B0%D0%BD%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2",
-      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9"
+      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9",
+      "meetingId": 1
     },
     {
       "id": 2,
       "review": "Эта книга освещает огромный круг вопросов из серии 'как, зачем и почему', которые не имеют прямого отношения к программированию, но всегда сопутствуют ему. Каждая глава книги освещает связанный круг вопросов и еще можно читать независимо от других.",
       "linkToVideo": "https://www.youtube.com/watch?v=80-KMebdZr4&ab_channel=%D0%98%D0%B2%D0%B0%D0%BD%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2",
-      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9"
+      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9",
+      "meetingId": 2
     },
     {
       "id": 3,
       "review": "Лично для меня книга открыла глаза на то, как надо организовывать код, как не надо и почему. Теперь, когда я смотрю на свои проекты, я понимаю, почему код через некоторое время становится клубком, который все сложнее поддерживать, хотя всегда стараешься делать проще и понятнее. Просто удивительно, как часто нарушаются принципы проектирования даже опытными программистами, ведь эти принципы давно известны и доступны.",
       "linkToVideo": "https://www.youtube.com/watch?v=80-KMebdZr4&ab_channel=%D0%98%D0%B2%D0%B0%D0%BD%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2",
-      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9"
+      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9",
+      "meetingId": 1
     },
     {
       "id": 4,
       "review": "Книга очень обширна, но мне, как новичку в JS, было сложно и непонятно. До 200 страницы все было ясно, а дальше было непонятно, что вообще происходит. Все написано с юмором. Перевод слегка кривой.Это идеальная книга для знающих основы. В ней рассматривается большой объем информации вплоть до node.js.",
       "linkToVideo": "https://www.youtube.com/watch?v=80-KMebdZr4&ab_channel=%D0%98%D0%B2%D0%B0%D0%BD%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2",
-      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9"
+      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9",
+      "meetingId": 2
     },
     {
       "id": 5,
       "review": "Стать более продуктивным — это вопрос не тайм-менеджмента, а управления своим вниманием. Я бы рассказал вам об этом больше, но сбился с мысли. К счастью, в помощь есть эта захватывающая книга. Крис Бэйли предлагает техники и методики, основанные на исследованиях и собственном опыте. Он научит фокусироваться и находить правильные моменты для того, чтобы дать передышку вашему вниманию.",
       "linkToVideo": "https://www.youtube.com/watch?v=80-KMebdZr4&ab_channel=%D0%98%D0%B2%D0%B0%D0%BD%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2",
-      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9"
+      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9",
+      "meetingId": 3
     },
     {
       "id": 6,
       "review": "Книга очень хорошая и полезная для всех программистов, но такое ощущение, что автор выдохся на половине пути. Описав основные структуры данных и начальные алгоритмы, в конце книге он просто перечисляет оставшиеся алгоритмы (а их немало) и отсылает за информацией о них в Гугл. Спасибо, я могу найти все в Гугле и без совета в книге, за которую заплатил. Так со, надеюсь, автор возьмет себя в руки и допишет эту замечательную работу хотя бы в виде второго тома. Тогда все будет идеально!",
       "linkToVideo": "https://www.youtube.com/watch?v=80-KMebdZr4&ab_channel=%D0%98%D0%B2%D0%B0%D0%BD%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2",
-      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9"
+      "linkToPresentation": "https://docviewer.yandex.ru/view/781132065/?*=M8%2FbPPKz2W48ZB3FpvYh9lATSDF7InVybCI6InlhLWRpc2stcHVibGljOi8vOVo5cW1qN29hR2o3dlkzV2tFcGNMRnNBNmhZM1pPemptenZPN3dCd1k2elIzdUJGV2NvQjdKL2cyMlFPVTNXNWVBbjYyZ0lpa3RhTXBIdVdKM3AyNVE9PSIsInRpdGxlIjoiMS4g0JDRgNGF0LjRgtC10LrRgtGD0YDQsCDQstC10LEt0L%2FRgNC40LvQvtC20LXQvdC40LkucHB0eCIsIm5vaWZyYW1lIjpmYWxzZSwidWlkIjoiNzgxMTMyMDY1IiwidHMiOjE2MDc5ODg4NzE2NzMsInl1IjoiMzIyMDgxMjk5MTYwNzYwMjIxNCJ9",
+      "meetingId": 3
     }
   ],
   "meetings": [
