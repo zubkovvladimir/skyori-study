@@ -62,6 +62,21 @@
         </button>
         </div>
     </div>
-    <MeetingItem />
+    {{#if this.isLoading}}
+      <div class="loading">
+          <img class="loading-img" src="spiner-cat.gif" alt="loading gif">
+      </div>
+      {{else}}
+        {{#if this.isError}}
+          <div class="error">
+              <img class="error-img" src="error.gif" alt="Error">
+              {{#if this.error}}
+                <h2 class="error-text">Error: {{this.error}}</h2>
+              {{/if}}
+          </div>
+        {{else}}
+          <MeetingItem />
+        {{/if}}
+    {{/if}}
   </div>
 </div>
