@@ -77,8 +77,14 @@
         {{else}}
           {{#each this.model as |meeting|}}
             <MeetingItem
+              @id={{meeting.id}}
               @date={{meeting.date}}
+              @reports={{meeting.reports}}
             />
+              <div>{{this.model}}</div>
+            {{#each this.model.date as |report|}}
+              <div>dddddddddddd</div>
+            {{/each}}
           {{/each}}
         {{/if}}
     {{/if}}

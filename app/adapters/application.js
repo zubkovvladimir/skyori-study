@@ -6,4 +6,14 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
   headers = {
     'Content-Type': 'application/json'
   };
+
+  buildURL(modelName, id, snapshot, requestType, query) {
+    let url = super.buildURL(...arguments);
+    if (modelName === 'meeting' && requestType === 'findAll') {
+      console.log("sdfsd")
+      url += '?_embed=reports';
+    }
+
+    return url;
+  }
 }
