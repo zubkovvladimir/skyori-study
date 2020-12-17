@@ -15,4 +15,5 @@ Router.map(function() {
   this.route('create-speaker', { path: '/speakers/new'});
   this.route('page-not-found', { path: '*path'});
   this.route('meeting', { path: '/meetings'});
+  this.route('report');
 });
