@@ -9,17 +9,17 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
 
   buildURL(modelName, id, snapshot, requestType, query) {
 		let url = super.buildURL(...arguments);
-		if (modelName === 'speaker' && requestType === 'findRecord' && id) {
-			url += '?_embed=reports';
-		}
+		// if (modelName === 'speaker' && requestType === 'findRecord' && id) {
+		// 	url += '?_embed=reports';
+		// }
 
-		if (modelName === 'book' && requestType === 'findRecord' && id) {
-			url += '?_embed=reports';
-		}
+		// if (modelName === 'book' && requestType === 'findRecord' && id) {
+		// 	url += '?_embed=reports';
+		// }
 
-		if (modelName === 'report') {
-			url+='?_expand=speaker&_expand=book&_expand=meeting'
-		}
+		// if (modelName === 'report') {
+		// 	url+='?_expand=speaker&_expand=book&_expand=meeting'
+		// }
 
 		if (modelName === 'meeting' && requestType === 'findAll') {
 			url += '?_embed=reports';
