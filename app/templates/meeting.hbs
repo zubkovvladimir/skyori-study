@@ -1,37 +1,32 @@
 <div class="container h-100">
   <div class="htop">
     <div class="d-flex position-relative justify-content-center">
-        <LinkTo @route="create-speaker" class="btn btn-outline-success my-2 d-flex position-absolute add-btn">Добавить</LinkTo>
+        {{!-- <LinkTo @route="create-speaker" class="btn btn-outline-success my-2 d-flex position-absolute add-btn">Добавить</LinkTo> --}}
         <h2 class="text-center">Встречи клуба</h2>
     </div>
     <div class="form-row navbar-panel justify-content-between align-items-end">
-      <div class="col-md-3">
-        <h5>Спикер</h5>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary dropdown-toggle my-2 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>Спикер...</span>
-            <span class="caret"></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Фамилия имя</a>
-            <a class="dropdown-item" href="#">Фамилия имя</a>
-            <a class="dropdown-item" href="#">Фамилия имя</a>
-          </div>
-          </div>
+      {{!-- <div class="col-md-3">
+        <h5>Фильтр по спикеру</h5>
+        <PowerSelect
+        @searchEnabled={{true}}
+        @onChange={{fn (mut this.speaker)}}
+        @selected={{this.speaker}}
+        @placeholder="Спикер..."
+        @search={{action "searchSpeaker"}} as |speaker|>
+          {{speaker.lastName}} {{speaker.firstName}}
+        </PowerSelect>
       </div>
+      <div>{{this.speaker.lastName}} {{this.speaker}}ssssss</div>
       <div class="col-md-3">
-        <h5>Книга</h5>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary dropdown-toggle my-2 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>Книга...</span>
-            <span class="caret"></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Название книги</a>
-            <a class="dropdown-item" href="#">Название книги</a>
-            <a class="dropdown-item" href="#">Название книги</a>
-          </div>
-          </div>
+        <h5>Фильтр по книге</h5>
+        <PowerSelect
+        @searchEnabled={{true}}
+        @onChange={{fn (mut this.book)}}
+        @selected={{this.book}}
+        @placeholder="Книга..."
+        @search={{action "searchBook"}} as |book|>
+          {{book.name}}
+        </PowerSelect>
       </div>
       <div class="col-md-3">
         <h5>Дата встречи</h5>
@@ -50,7 +45,7 @@
         </div>
       </div>
       <div class="col-md-auto text-right col-filter">
-        <button type="button" class="btn btn-outline-primary my-2">
+        <button type="button" class="btn btn-outline-primary my-2"  {{on "click" (fn this.searchBookClick speaker.lastName)}}>
           <svg viewBox="0 0 16 16" class="bi bi-funnel card-button" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
           </svg>
@@ -60,7 +55,7 @@
             <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg>
         </button>
-        </div>
+        </div> --}}
     </div>
     {{#if this.isLoading}}
       <div class="loading">

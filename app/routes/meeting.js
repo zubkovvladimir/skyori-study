@@ -9,7 +9,7 @@ export default class MeetingRoute extends Route {
       }
   }
 
-  async model( { search } ) {
+  async model( { speakerSearch } ) {
     let promise;
 
     // if(search) {
